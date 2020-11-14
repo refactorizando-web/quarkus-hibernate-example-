@@ -1,4 +1,4 @@
-package com.refactorizando.quarkus.example.Controller;
+package com.refactorizando.quarkus.example;
 
 import io.quarkus.test.junit.NativeImageTest;
 

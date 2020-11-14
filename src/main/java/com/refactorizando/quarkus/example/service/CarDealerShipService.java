@@ -1,4 +1,4 @@
-package com.refactorizando.quarkus.example.Controller.service;
+package com.refactorizando.quarkus.example.service;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 
 import java.util.List;
 
-import com.refactorizando.quarkus.example.Controller.entity.Model;
+import com.refactorizando.quarkus.example.entity.Model;
 
 @ApplicationScoped
 public class CarDealerShipService {
@@ -21,5 +21,6 @@ public class CarDealerShipService {
         .getResultList();
 
   }
+
 
 }

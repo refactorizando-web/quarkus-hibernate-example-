@@ -1,16 +1,17 @@
-package com.refactorizando.quarkus.example.Controller.entity;
+package com.refactorizando.quarkus.example.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "BRAND")
 public class Brand {
 
   @Id
   private Long id;
 
   private String name;
-
 
   public String getName() {
     return name;

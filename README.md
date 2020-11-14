@@ -27,3 +27,11 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 You can then execute your native executable with: `./target/quarkus-hibernate-example-0.0.1-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
+
+## Deploy to kubernetes
+
+if you want to deploy to kubernetes you can use the next command:
+```
+mvn clean package -Dquarkus.container-image.build=true -Dquarkus.kubernetes.deploy=true
+
+```

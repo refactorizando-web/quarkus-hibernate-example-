@@ -1,12 +1,14 @@
-package com.refactorizando.quarkus.example.Controller.entity;
+package com.refactorizando.quarkus.example.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "MODEL")
 @NamedQuery(name = "Model.findByBrand", query = "SELECT m FROM Model m  where brand.name =: name")
 public class Model {
 
